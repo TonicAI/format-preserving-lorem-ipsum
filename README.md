@@ -2,9 +2,9 @@
 
 ![](demo.gif)
 
-Format preserving Lorem Ipsum text generator replaces text in a source text with Lorem Ipsum, while
-preserving some Unicode punctuation, all Unicode marks (e.g. + and =) and control characters (e.g. newline and tab), and
-replacing Unicode numbers with random digits between 0 and 9.
+Format preserving Lorem Ipsum text generator replaces a source text with Lorem Ipsum, while
+preserving some Unicode punctuation (e.g. ( and "), all Unicode marks (e.g. + and =) and control
+characters (e.g. newline and tab), and replacing Unicode numbers with random digits between 0 and 9.
 
 ## License
 
@@ -12,7 +12,7 @@ Licensed under MIT license by [Tonic](https://www.tonic.ai).
 
 ## Requirements
 
-Python 3.5+
+Python 3.5+.
 
 ## Usage
 
@@ -31,6 +31,19 @@ $ cat <input_file> | python mask.py
 ## Example
 
 ```
+$ cat input.txt
+Jane Little (DOB: 9-6-1977)
+
+Jane Little seems to have had an inadequate response to treatment as yet. Symptoms of depression continue to be described. Her symptoms, as noted, are unchanged and they are just as frequent or intense as previously described. Jane Little describes feeling sad. Jane Little denies suicidal ideas or intentions. Jane Little reports the symptoms of this disorder continue unchanged. The subjective feeling of apprehension is occurring. Hypervigilance is occurring more frequently.
+
+Participant(s) Developing the Plan:
+- Susan Lobao (Counselor)
+- Mary Golden (Client)
+
+Diagnosis:
+- Major depressive disorder, single episode, severe without psychotic features, F32.2 (ICD-10) (Active)
+- Anxiety disorder, unspecified, F41.9 (ICD-10) (Active)
+
 $ python mask.py input.txt
 Lorem ipsum (dolor7-9-1525)
 
