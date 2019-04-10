@@ -1,5 +1,7 @@
 # Format Preserving Lorem Ipsum Text Generation
 
+![](demo.gif)
+
 Format preserving Lorem Ipsum text generator replaces text in a source text with Lorem Ipsum, while
 preserving some Unicode punctiontion, all Unicode control characters (e.g. newline and tab), and
 replacing Unicode numbers with random digits between 0 and 9.
